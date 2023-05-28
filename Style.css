@@ -1,0 +1,267 @@
+/* Starting style sheet*/
+
+body{                        /* Body part */
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+.header{                    /* Header part */
+    padding: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Images/html\ 01.jpg);
+    min-height: 5vh;
+    max-height: 180px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+ 
+ .logo{
+	float: left;
+	border: 2px solid rgb(238, 252, 53);
+	padding: 0px;
+	margin: 0px;
+ }
+ 
+ #logo_image_head{
+	width: 110px;
+	height:110px;
+ }
+ 
+#logo_image_head:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
+ 
+.name{
+    text-align: center;
+	font-size: 30px;
+	color: white;
+}
+.h_para{
+	text-align: center;
+	color: white;
+}
+.btn {
+    border: 1px solid black ;
+    background-image: linear-gradient(red, black);
+    padding: 15px 50px;
+	margin-left: 15px;
+    font-size: 16px;
+	color: black;
+	font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+	float: right;
+} 
+.btn:hover{
+	background: rgb(251, 255, 17);
+}
+.content {
+    padding: 20px;
+    text-align: center;
+    box-align:flex-end;
+	min-height: 5vh;
+	max-height: 100vh;
+	background-image: linear-gradient(white, gray, white);
+}
+.column {
+	float: left;
+	width: 38%;
+	padding: 10px;
+	height: 580px;	
+}
+.column2 {
+	float: left;
+	width: 20%;
+	padding: 0px;
+	height: 580px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#body_banner{
+	width: 337.5px;
+	height: 580px;
+}
+
+p{
+	text-align: justify;
+	font-weight: bold;	
+}
+
+li{
+	text-align: justify;
+	font-weight: bold;
+}
+
+.reason{
+	font-size: 12px;
+}
+
+/* Apply Now Page Styling */
+.hov{
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+
+.tabhead label{
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+
+#formbox{
+	color: rgb(0, 0, 0);
+}
+
+/* Contact Us Page Styling */
+.container2{
+    width:100%;
+    margin-top: 30px;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    
+}
+.container2.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container2.contactInfo.box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container2.contactInfo.box.icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container2.contactInfo.box.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container2.contactInfo.box.text{
+    font-weight: 500;
+    color: #00bcd4;
+    
+}
+
+
+
+/*Contact Us Social media styling*/ 
+.Icons{
+	margin-top: 5px;
+	margin-right:5px;
+	height: 50px;
+	width: -20%;
+	float:right;
+}    
+	#Twitter, #Whatsapp, #Insta, #FB, #Gmail, #Gmap {
+		height: 40px;
+		width: 40px;
+	}
+
+
+
+/* Footer Styling */
+.footer {
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Images/html\ 01.jpg);
+    box-align:flex-end;
+	min-height: 5vh;
+	max-height: 25vh;
+	background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.ft_data{
+	width: 100%;
+}
+
+.footer_logo{
+	float: left;
+	border: 2px solid rgb(238, 252, 53);
+	padding: 0px;
+	margin: 0px;
+ }
+ 
+ #logo_image_footer{
+	width: 80px;
+	height:75px;
+ }
+ 
+ #logo_image_footer:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
+
+.footer_links{
+	text-decoration: none;
+	padding: 0px 30px;
+	font-size: 13px;
+	color: white;
+	font-weight: bold;
+	float: right;
+}
+
+.footer_links:hover{
+	color: red;
+}
+
+.ft_links{
+	width: 100;
+	float: right;
+}
+
+.social_media{            /* Footer Social Media logos styling */
+	float: right;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.social_media:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
+
+.ft_social{
+	width: 100%;
+	float: right;
+	
+}
+
+table, tr, td{
+	text-align: left;
+	padding-left: 10px;
+	font-weight: bold;
+	color: black;
+	font-size: 13px;
+}
+
+.branches{
+	width: 100%;
+}
+
+.statement{
+	font-size: 10px;
+	text-decoration: underline;
+}
+

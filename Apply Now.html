@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">     <!--html open tag-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+<title>ABC Learning Center</title>
+
+<link rel="stylesheet" type="text/css" href="Style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<script src="https://kit.fontawesome.com/bc757909c9.js" crossorigin="anonymous" >
+</script>
+</head>
+
+<body>        <!--body open tag-->  
+    
+     <!---------Starting point of the header content----------->
+ <section class="header">
+    <nav>
+        <div class="logo">
+            <a href="Home.html"><img id="logo_image_head" src="Images/ABC.png"></img></a>
+        </div>
+        <p class="name">ABC Learning Center</p>
+        <p class="h_para">WELCOME</p>
+    </nav>
+    <!---------navigation bar-------->
+    <div class="navigation_bar">
+    
+        <a href="Contact Us.html"><button class="btn">Contact us</button></a>
+        <a href="Privacy Policy.html"><button class="btn">Privacy Policy</button></a>
+        <a href="Site Map.html"><button class="btn">Site Map</button></a>
+        <a href="Courses.html"><button class="btn">Courses</button></a>
+        <a href="About us.html"><button class="btn">About us</button></a>
+        <a href="Home.html"><button class="btn">Home</button></a>
+        
+    </div>
+</section>
+
+<!-- Apply Now Page -->
+
+<div id="apply_now" class="tab-pane fade">
+    <div class="row">
+        <div class="column2">
+            <img id="body_banner" src="Images/body_banner.PNG"></img>
+        </div>
+        <div class="column">
+            <ol>					
+                <form  action="Thank You.html" onsubmit="return validateForm()"  method="POST" >
+                    <table class="form">
+                        <tr style="background-color:rgba(4, 13, 56, 0.438)">
+                            <td colspan="3">
+                            <h1 class="reg"> About You </h1>
+                            <p  class="reg">Please fill in this register form to join with us</p>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="fname">Name</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="fname" name="firstname" placeholder="First name....." onkeyup="lettersOnly(this)" required>
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="lname" name="lastname" placeholder="Last name....." onkeyup="lettersOnly(this)" required>
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="bday">Date of Birth</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="date" id="bday" name="birthday" placeholder="....." required>
+                            </td>
+                            <td>
+        
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="nic" >NIC No.</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="nic" name="NIC" placeholder="..................V/X"  maxlength="12" required> 
+                            </td>
+                            <td>
+        
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="gender" required>Gender</label>
+                            </th>
+                            <td class="sel">
+                                <input id="formbox" type="radio" id="gender1" name="gender" value="male">
+                                <label for="gender1">Male</label>
+                            
+                            
+                                <input id="formbox" type="radio" id="gender2" name="gender" value="female">
+                                <label for="gender1">Female</label>
+                            </td>
+                            <td>
+        
+                            </td>
+                            
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="phone" required>Phone number</label>
+                            </th>
+                            
+                            <td>
+                                <select id="formbox">
+                                    <option id="formbox" >+94</option>
+                                    <option id="formbox" >+54</option>
+                                    <option id="formbox" >+1</option>
+                                    <option id="formbox" >+32</option>
+                                    <option id="formbox">+55</option>
+                                </select>
+                                    
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="phone" name="phonenum" placeholder=" 123-456-789"  maxlength="12" onkeypress="isInputNumber(event)" required> 
+                            </td>
+                            
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="email">Email</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="email" name="email" placeholder="..................@gamail.com" required>
+                            </td>
+                            <td>
+        
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="phone">Address</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder=".............," required>
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder="Route.........," required>
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <td class="tabhead">
+        
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder="Region.........,"  onkeyup="lettersOnly(this)" required>
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder="Country.........."  onkeyup="lettersOnly(this)" required>
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="course">Interest programme</label>
+                            </th>
+                            <td>
+                                <select id="formbox" name="course" required>
+                                    <option  id="formbox" value="HTML" >Please select a course</option>
+                                    <option id="formbox" value="HTML" id="formbox" >HTML Course</option>
+                                    <option id="formbox" value="HTML"  id="formbox">Programming in JAVA </option>
+                                </select>
+                            </td> 
+                            <td>
+        
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="course">GCE O/L,GCE A/L Certifates</label>
+                            </th>
+                            <td>
+                                <label for="myfile"> GCE O/L</label>
+                                <input id="formbox" type="file" id="myfile" name="myfile" multiple required>
+                            </td> 
+                            <td>
+                                <label for="myfile"> GCE A/L</label>
+                                <input id="formbox" type="file" id="myfile" name="myfile" multiple required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"  class="reg" >
+                                <input id="formbox" type="reset" value="Reset">
+                                <input id="formbox" type="submit" value="Submit" onclick="myFunction()">
+                            </td>
+                            <td>
+        
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </form>
+            </ol>
+        </div>
+
+        <div class="column">
+            <ol>					
+                <form  action="Thank You.html" onsubmit="return validateForm()"  method="POST">
+                    <table class="form">
+                        <tr style="background-color:rgba(4, 13, 56, 0.438)">
+                            <td colspan="3">
+                            <h1 class="reg"> About Parents/Guardian  </h1>
+                            <p  class="reg">For Applicant's Parents/Guardian...</p>
+                            <p  class="reg">Please fill in this register form to join with us</p>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="fname">Name</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="fname" name="firstname" placeholder="First name....." onkeyup="lettersOnly(this)" required>
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="lname" name="lastname" placeholder="Last name....." onkeyup="lettersOnly(this)">
+                            </td>
+                        </tr>
+                        
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="nic">NIC No.</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="nic" name="NIC" placeholder="..................V/X"  maxlength="12"> 
+                            </td>
+                            <td>
+        
+                            </td>
+                        </tr>
+                        
+                        <tr class="hov">
+                            <th class="tabhead" >
+                                <label for="phone">Phone number</label>
+                            </th>
+                            
+                            <td>
+                                <select id="formbox">
+                                    <option id="formbox" >+94</option>
+                                    <option id="formbox">+54</option>
+                                    <option id="formbox">+1</option>
+                                    <option id="formbox">+32</option>
+                                    <option id="formbox">+55</option>
+                                </select>
+                                    
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="phone" name="phonenum" placeholder=" 123-456-789"  maxlength="12" onkeypress="isInputNumber(event)" > 
+                            </td>
+                            
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="email">Email</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="email" name="email" placeholder="..................@gamail.com" required>
+                            </td>
+                            <td>
+        
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <th class="tabhead">
+                                <label for="phone">Address</label>
+                            </th>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder=".............,">
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder="Route.........,">
+                            </td>
+                        </tr>
+                        <tr class="hov">
+                            <td class="tabhead">
+        
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder="Region.........,"  onkeyup="lettersOnly(this)" required>
+                            </td>
+                            <td>
+                                <input id="formbox" type="text" id="add" name="address" placeholder="Country.........."  onkeyup="lettersOnly(this)" required>
+                            </td>
+                        </tr>
+    
+                        <tr> <br>
+                            <td colspan="3"  class="reg" >
+                                <input id="formbox" type="reset" value="Reset">
+                                <input id="formbox" type="submit" value="Submit" onclick="myFunction()">
+                            </td>
+                            <td>
+        
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </form>
+            </ol>
+        </div>
+
+    </div>
+</div>
+
+<div class="column">
+    <ol>					
+        <form  action="Thank You.html" onsubmit="return validateForm()"  method="POST">
+            <table class="form">
+                <tr style="background-color:rgba(4, 13, 56, 0.438)">
+                    <td colspan="3">
+                    <h1 class="reg"> About Parents/Guardian  </h1>
+                    <p  class="reg">For Applicant's Parents/Guardian...</p>
+                    <p  class="reg">Please fill in this register form to join with us</p>
+                    </td>
+                </tr>
+                <br>
+                <tr class="hov">
+                    <th class="tabhead">
+                        <label for="fname">Name</label>
+                    </th>
+                    <td>
+                        <input id="formbox" type="text" id="fname" name="firstname" placeholder="First name....." onkeyup="lettersOnly(this)" required>
+                    </td>
+                    <td>
+                        <input id="formbox" type="text" id="lname" name="lastname" placeholder="Last name....." onkeyup="lettersOnly(this)">
+                    </td>
+                </tr>
+                
+                <tr class="hov">
+                    <th class="tabhead">
+                        <label for="nic">NIC No.</label>
+                    </th>
+                    <td>
+                        <input id="formbox" type="text" id="nic" name="NIC" placeholder="..................V/X"  maxlength="12"> 
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                
+                <tr class="hov">
+                    <th class="tabhead" >
+                        <label for="phone">Phone number</label>
+                    </th>
+                    
+                    <td>
+                        <select id="formbox">
+                            <option id="formbox" >+94</option>
+                            <option id="formbox">+54</option>
+                            <option id="formbox">+1</option>
+                            <option id="formbox">+32</option>
+                            <option id="formbox">+55</option>
+                        </select>
+                            
+                    </td>
+                    <td>
+                        <input id="formbox" type="text" id="phone" name="phonenum" placeholder=" 123-456-789"  maxlength="12" onkeypress="isInputNumber(event)" > 
+                    </td>
+                    
+                </tr>
+                <tr class="hov">
+                    <th class="tabhead">
+                        <label for="email">Email</label>
+                    </th>
+                    <td>
+                        <input id="formbox" type="text" id="email" name="email" placeholder="..................@gamail.com" required>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="hov">
+                    <th class="tabhead">
+                        <label for="phone">Address</label>
+                    </th>
+                    <td>
+                        <input id="formbox" type="text" id="add" name="address" placeholder=".............,">
+                    </td>
+                    <td>
+                        <input id="formbox" type="text" id="add" name="address" placeholder="Route.........,">
+                    </td>
+                </tr>
+                <tr class="hov">
+                    <td class="tabhead">
+
+                    </td>
+                    <td>
+                        <input id="formbox" type="text" id="add" name="address" placeholder="Region.........,"  onkeyup="lettersOnly(this)" required>
+                    </td>
+                    <td>
+                        <input id="formbox" type="text" id="add" name="address" placeholder="Country.........."  onkeyup="lettersOnly(this)" required>
+                    </td>
+                </tr>
+
+                <tr> <br>
+                    <td colspan="3"  class="reg" >
+                        <input id="formbox" type="reset" value="Reset">
+                        <input id="formbox" type="submit" value="Submit" onclick="myFunction()">
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </ol>
+</div>
+
+</div>
+</div>
+
+
+<!-- Starting Footer --> 
+
+<section class="footer">
+    <table class="ft_data">
+        <tr>
+            <td>	
+                <div class="footer_logo">
+                    <a href="Home.html"><img id="logo_image_footer" src="Images/ABC.png"></img></a>
+                </div>
+                
+                <div class="branches">
+                    <table>
+                        <tr>
+                            <td>
+                                Our Branches: Galle | Colombo | Kandy
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email: <a href="https://www.gmail.com/"> abc@learningcenter.edu.lk</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hotlines:<a href="https://www.whatsapp.com/"> +94769239840</a>|<a href="https://www.whatsapp.com/"> +94715783031 </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="statement">© 2021 ABC | Learning Center, All Rights Reserved.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                <div class="ft_links">
+                    <a class="footer_links" href="Contact Us.html">Contact us</a>
+                    <a class="footer_links" href="Site Map.html">Sitemap</a>
+                    <a class="footer_links" href="Privacy Policy.html">Privacy Policy</a>
+                </div>
+                            <div class="ft_social"> 
+                                <h4></h4>
+                                <a href="https://www.instagram.com/"><img id="Insta" class="social_media" src="Images\instagram.png" alt=""> </img></a>	
+                                <a href="https://www.facebook.com/">	<img id="FB" class="social_media" src="Images\fbcolour.png" alt=""> </img></a>
+                                <a href="https://twitter.com/i/flow/login">	<img id="Twitter" class="social_media" src="Images\twittercolor.png"alt=""> </img></a>
+                                <a href="https://www.whatsapp.com/">	<img id="Whatsapp" class="social_media" src="Images\WhatsAppcolour.png"alt=""> </img></a>
+                                <a href="https://www.gmail.com/">	<img id="Gmail" class="social_media" src="Images\GMailcolour.png"alt=""> </img></a>
+                                <a href="https://www.google.com/maps/place/NIBM+Galle+Centre/@6.0371624,80.2218387,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae173b12f4deb15:0x31ccbc33eb91d2ac!8m2!3d6.0371624!4d80.2240274">	<img id="Gmap" class="social_media" src="Images\GMapcolour.png"alt=""> </img></a>
+                            </div>
+                
+                <br>
+                <br>
+                
+            </td>
+        </tr>
+    </table>
+</section>
+<!-- Ending Footer -->
+        
+        <!-- <div class="demo"> 
+        this is a <a href="D:\LITHAN CAMPUS\LITHAN Modules\Module - 02\Assignment 02\ABC Learning Center\Privacy Policy.html" target="_blank">Privacy Policy</a>
+        demo</div>-->
+        
+        </body>         <!--body close tag-->
+        </html>         <!--html close tag-->
